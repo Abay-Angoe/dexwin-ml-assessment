@@ -1,0 +1,3 @@
+data had inconsistent country naming, amounts stored as strings, ops_review_code leaks correct answers into the models training. the is fraud flag comes later and cant be used in training
+
+Plan was to clean data. parse the time into a uniform value, and split the data by time so the model can be train on the data sequencially. using yesterdays numbers to train and validate with today. plan was to test a log regression model and a GBT model. see which performs best and promote it. the models 92% number looks good but is meaning less if it still lets frauds transations go through that cost the company 3x. catching very few fraudulent transactions. 
